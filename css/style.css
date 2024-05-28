@@ -5,3 +5,7 @@
     display: block;
     margin-top: 4px;
 }
+
+.vertical-list div {
+    margin-top: 32px;
+}

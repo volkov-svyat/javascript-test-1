@@ -198,3 +198,97 @@ function div(a,b) {
 function mul(a,b) {
     return a*b;
 };
+function len(string) {
+    return string.length
+};
+function even(a) {
+    return a%2==0;
+};
+
+function task_2_1() {
+    let input_a = Number(document.getElementById("calc-a").value);
+    let action = document.getElementById("calc-action").value;
+    let input_b = Number(document.getElementById("calc-b").value);
+    let obj_output = document.getElementById("calc-output");
+    let var_output = null;
+    //
+    if(action=="*"){
+        var_output = input_a*input_b;
+    }
+    else if(action=="/"){
+        var_output = input_a/input_b;
+    }
+    else if(action=="+"){
+        var_output = input_a+input_b;
+    }
+    else if(action=="-"){
+        var_output = input_a-input_b;
+    };
+    //
+    obj_output.textContent = var_output;
+};
+
+function task_2_2() {
+    let obj_input = document.getElementById("length-input");
+    let obj_output = document.getElementById("length-output");
+    obj_output.textContent = len(obj_input.value);
+};
+
+function task_2_3() {
+    let obj_input = Number(document.getElementById("symbol-input").value);
+    let obj_output = document.getElementById("symbol-output");
+    //
+    let value = "Ноль";
+    if(obj_input > 0){
+        value = "Положительное"
+    }
+    else if(obj_input < 0){
+        value = "Отрицательное"
+    };
+    //
+    obj_output.textContent = value;
+};
+
+function task_2_4() {
+    let a = parseFloat(document.getElementById("avg-a").value);
+    let b = parseFloat(document.getElementById("avg-b").value);
+    let output = document.getElementById("avg-output");
+    output.textContent = (a+b)/2;
+};
+
+function task_2_5() {
+    let object = {
+        name: document.getElementById("object-name").value,
+        age: document.getElementById("object-age").value,
+    };
+    console.log(object.name);
+    console.log(object.age);
+    alert("Возраст и имя выведены в консоль");
+};
+
+function task_2_6() {
+    let a = parseFloat(document.getElementById("even-a").value);
+    let output = document.getElementById("even-output");
+    let is_even = "";
+    if(even(a)){
+        is_even = "Чётное";
+    }
+    else{
+        is_even = "Нечетное";
+    };
+    output.textContent = is_even;
+};
+
+function task_2_8() {
+    let a = parseFloat(document.getElementById("log-a").value);
+    let b = parseFloat(document.getElementById("log-b").value);
+    let output = document.getElementById("log-output");
+    let is_div = "";
+    if(Math.round(a/b) == a/b){
+        is_div = `Да (${a/b})`;
+    }
+    else{
+        is_div = `Нет (${a/b})`;
+    };
+    output.textContent = is_div;
+};

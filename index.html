@@ -36,8 +36,69 @@
     <span class="vertical-list">
         <h2>Задания по практике 2</h2>
         <span>
-            <input id="calc-a" placeholder="Число А">
-            <input id="calc-a" placeholder="Число Б">
+            <h3>Задание 1: Функции сложения, вычитания, умножения и деления двух чисел</h3>
+            <input type="number" id="calc-a" placeholder="Число А">
+            <select id="calc-action">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="number" id="calc-b" placeholder="Число Б">
+            <label>=</label>
+            <label id="calc-output">0</label>
+            <button style="width:395px;" onclick="task_2_1()">Вычислить</button>
         </span>
+        <div>
+            <span>
+                <h3>Задание 2: Функция расчета длины строки</h3>
+                <input id="length-input">
+                <label id="length-output">0</label>
+                <button style="width:177px;" onclick="task_2_2()">Расчитать длину</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <h3>Задание 3: Положительное, отрицательное или ноль</h3>
+                <input type="number" id="symbol-input">
+                <label id="symbol-output">Ноль</label>
+                <button style="width:177px;" onclick="task_2_3()">Вычислить</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <h3>Задание 4: Среднее арифметическое двух чисел</h3>
+                <input type="number" id="avg-a" placeholder="Число А">
+                <input type="number" id="avg-b" placeholder="Число Б">
+                <label>=</label>
+                <label id="avg-output">0</label>
+                <button style="width:358px;" onclick="task_2_4()">Вычислить</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <h3>Задание 5: Создание объекта и вывод его данных в консоль</h3>
+                <input id="object-name" placeholder="Имя">
+                <input id="object-age" type="number" placeholder="Возраст">
+                <button style="width:358px;" onclick="task_2_5()">Вывести в консоль</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <h3>Задание 6: Четность числа</h3>
+                <input id="even-a" type="number">
+                <label id="even-output"></label>
+                <button style="width:177px;" onclick="task_2_6()">Вычислить</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <h3>Задание 8: Делится ли без остатка</h3>
+                <input type="number" id="log-a" placeholder="Число А">
+                <input type="number" id="log-b" placeholder="Число Б">
+                <label id="log-output"></label>
+                <button style="width:358px;" onclick="task_2_8()">Делится без остатка?</button>
+            </span>
+        </div>
     </span>
 </body>
